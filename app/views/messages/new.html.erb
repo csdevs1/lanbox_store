@@ -1,0 +1,40 @@
+
+<div class="background-contact">
+    <span><%= link_to root_url do %><i class="fa fa-hand-o-left"></i> Regresar<% end %></span>
+    <section class="contact-section">
+        <div class="row disable-select">
+            <div class="large-9 medium-9 small-9 small-centered columns">
+                <%= form_for @message, :html => {:class => "contact-form"} do |f| %>
+                    <% if @message.errors.any? %>
+                        <div id="error_explanation">
+                            <h2>
+                                <%= "#{pluralize(@message.errors.count, "error")} prohibited this message from being sent:" %>
+                            </h2>
+                            <ul>
+                                <% @message.errors.full_messages.each do |msg| %>
+                                <li><%= msg %></li>
+                                <% end %>
+                            </ul>
+                        </div>
+                    <% end %>
+
+                    <%= f.label :name %>
+                    <%= f.text_field :name, placeholder: "Ingrese su nombre", :required => true %>
+                    <%= f.label :email %>
+                    <%= f.email_field :email, placeholder: "Ingrese su correo electronico", :required => true %>
+
+                    <%= f.label :Titulo %>
+                    <%= f.text_field :subject, placeholder: "Ingrese el asunto de su mensaje" %>
+
+                    <%= f.label :contenido %><div id="textarea_feedback"></div>
+                    <%= f.text_area :content, :cols => 60, :rows => 8, placeholder: "Ingrese su mensaje", :required => true, :maxlength => 1445, id: "textarea" %>
+                
+                    <br>
+                    <%= f.submit 'Enviar', class: 'button' %>
+                
+                <% end %>
+                
+            </div>
+        </div>
+    </section>
+</div>

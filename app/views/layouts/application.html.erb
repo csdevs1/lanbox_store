@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>LanboxStore</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    <script src="https://code.jquery.com/jquery-2.1.4.js"></script>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    <script>
+        var owldomain = window.location.hostname.indexOf("owlgraphic");
+        if(owldomain !== -1){
+            !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
+        }
+    </script>
+  <%= csrf_meta_tags %>
+    <link href='https://fonts.googleapis.com/css?family=Dosis:400,500,600&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <link rel="icon" type="image/png" href="<%= asset_path('logo.png') %>" />
+</head>
+<body>
+
+    <!-- loading 
+        <div id="loader" role="load">
+            <i class="fa fa-power-off"></i>
+            <span><p>CARGANDO<label id="dot1">.</label><label id="dot2">.</label><label id="dot3">.</label></p></span>
+        </div>-->
+<%= yield %>
+
+</body>
+</html>

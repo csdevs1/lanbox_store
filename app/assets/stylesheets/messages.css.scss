@@ -1,0 +1,68 @@
+// Place all the styles related to the messages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.background-contact {
+    overflow: hidden;
+    background: url(contact-us.jpg);
+    background-attachment: fixed;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100%;
+}
+
+.background-contact a {
+    text-decoration: none;
+    font-size: 1.5em;
+    color: #FFF;
+    padding: 15px;
+}
+
+.background-contact a:hover {
+    text-decoration: none;
+    color: #d9d8d9;
+    text-shadow: 5px 5px 10px #555;
+}
+
+.contact-section {
+    padding-left: 10%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: rgba(0, 0, 0, 0.6);
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.contact-form label {
+    padding-top: 5%;
+    display: block;
+    font-family: 'Dosis', sans-serif;
+    font-size: 1.1em;
+    color: #fff;
+    font-weight: 900;
+}
+
+.contact-form  input[type='text'], .contact-form  input[type='email'] {
+    background-color: transparent;
+    background-image: none;
+    outline: 0;
+    border: 0 solid #999;
+    border-bottom-width: 3px;
+    border-radius: 0;
+    cursor: pointer;
+    line-height: normal;
+    letter-spacing: .05em;
+    color: #fff;
+    font-family: 'Dosis', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    border-color: inherit;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    width: 80%;
+}
+
+.contact-form textarea {
+    min-height: 250px;
+    resize: none;
+    width: 80%;
+}

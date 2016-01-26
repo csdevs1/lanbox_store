@@ -1,0 +1,2 @@
+module LanboxPageHelper
+end
