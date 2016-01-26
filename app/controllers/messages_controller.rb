@@ -8,7 +8,7 @@ class MessagesController < ApplicationController
         
         if @message.valid?
             MessageMailer.message_me(@message).deliver_now
-            redirect_to root_path, notice: "Thankyou for your message."
+            redirect_to :root, notice: "Thankyou for your message."
         else
             render :new
         end
