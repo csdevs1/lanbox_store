@@ -3,10 +3,6 @@ $(window).load(function() {
         Note: Stop page scrolling while loading.
     */
     $("#loader").delay(3000).fadeOut("slow");
-    $('html, body').css({ 'overflow': 'hidden', 'height': '100%' }).delay(3000);
-    setTimeout(function(){
-        $('html, body').removeAttr('style');
-    }, 3799);
 });
 /*
 $(document).mouseup(function (e) {
