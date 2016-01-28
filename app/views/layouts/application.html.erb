@@ -15,13 +15,8 @@
     <link href='https://fonts.googleapis.com/css?family=Dosis:400,500,600&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
     <link rel="icon" type="image/png" href="<%= asset_path('logo.png') %>" />
 </head>
-<body>
-
-    <!-- loading 
-        <div id="loader" role="load">
-            <i class="fa fa-power-off"></i>
-            <span><p>CARGANDO<label id="dot1">.</label><label id="dot2">.</label><label id="dot3">.</label></p></span>
-        </div>-->
+<body data-no-turbolink>
+    
 <%= yield %>
 
 </body>

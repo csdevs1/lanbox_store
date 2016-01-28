@@ -1,9 +1,7 @@
 $(window).load(function() {
-    /*
-        Note: Stop page scrolling while loading.
-    */
     $("#loader").delay(3000).fadeOut("slow");
 });
+
 /*
 $(document).mouseup(function (e) {
     function containerClose($cont){
