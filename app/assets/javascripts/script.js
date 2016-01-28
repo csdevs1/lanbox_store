@@ -22,9 +22,7 @@ $(document).mouseup(function (e) {
 
 var ready;
 
-ready = (function() {
-    $("body").append('<div id="loader" role="load">            <i class="fa fa-power-off"></i>            <span><p>CARGANDO<label id="dot1">.</label><label id="dot2">.</label><label id="dot3">.</label></p></span></div>');
-    
+ready = (function() {    
   /*  setTimeout(function(){
             $("#loader").remove();
     }, 4500);*/
