@@ -94,7 +94,7 @@ ready = (function() {
 });
 
 $(document).ready(ready);
-
+/*
 var current;
 
 $(function() { 
@@ -124,4 +124,4 @@ $(function() {
                                          
         event.preventDefault();
     });
-});
+});*/
