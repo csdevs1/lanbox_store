@@ -732,7 +732,7 @@ END OF CONTACT FORM */
 don't use this.
 http://www.youtube.com/watch?v=umDr0mPuyQc */
 .shape {
-  text-shadow: rgb(11, 11, 15) 1px 1px,
+    text-shadow: rgb(11, 11, 15) 1px 1px,
     rgb(11, 11, 15) 2px 2px,
     rgb(11, 11, 15) 3px 3px,
     rgb(11, 11, 15) 4px 4px,
@@ -766,13 +766,13 @@ http://www.youtube.com/watch?v=umDr0mPuyQc */
     rgb(48, 48, 64) 32px 32px,
     rgb(50, 50, 67) 33px 33px,
     rgb(52, 52, 70) 34px 34px;
-   background-color: rgb(52, 52, 70);
-  height: 100%;
-  width: 100%;
-  font-size: 75px;
-  text-align: center;
+    background-color: rgb(52, 52, 70);
+    height: 100%;
+    width: 100%;
+    font-size: 75px;
+    text-align: center;
 }
-LONG SHADOWS GENERATOR BY JUANI
+
 /* END OF PAYMENT METHODS*/
 
 @keyframes bounce {
