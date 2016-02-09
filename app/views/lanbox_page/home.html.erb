@@ -30,8 +30,7 @@
                 </div>
                 <a href="#acerca" class="cd-scroll-down cd-img-replace">scroll down</a>
             </div>
-        </div>
-        <div class='content' id='acerca'></div>
+        </div>        
         <div class='content' id='servicios'>
             <div class="wrapper">
                 <header id="servicios-title">SERVICIOS</header>
@@ -55,12 +54,13 @@
             </div>
         </div>
         <div class='content' id='contactenos'>
-            <div class="wrapper">
+            <div class="wrapper">                
                 <header>
+                    <div id="contact-title">CONTACTENOS</div>
                     <nav id="nav-contact">
                         <ul>
-                            <li><%= link_to new_message_path do %><i class="fa fa-envelope-o"></i> <p>Escribenos</p><% end %></li>
-                            <li><a href="javascript:void(0)" onclick="$('#payment').show(100); $('#fade').show();"><i class="fa fa-money"></i><p>Metodos de pagos</p></a></li>
+                            <li><a href="contact.html"><i class="fa fa-envelope-o"></i><p>Escribenos</p></a></li>
+                          <!--  <li><a href="javascript:void(0)" onclick="$('#payment').show(100); $('#fade').show();"><i class="fa fa-money"></i><p>Metodos de pagos</p></a></li> -->
                             <li><a id="map-btn"><i class="fa fa-map"></i><p>mapa</p></a></li>
                         </ul>                        
                     </nav>
@@ -83,48 +83,59 @@
                     <div class='embed-container'>
                     </div>
                 </div>
-                
-                <div id="payment" class="row payment">
+                <!-- <div id="payment" class="row payment">
                     <p><a href = "javascript:void(0)" onclick = "$('#payment').hide(100); $('#fade').hide();"><span>Cerrar</span> <i class="fa fa-close"></i>
 </a></p>
                     <div class="large-12 medium-12 small-12 columns">
-                            <p>Formas de pago</p>
-                            <ul>
-                                <li>Deposito</li>
-                                <li>Cheque</li>
-                                <li>Transferencia</li>
-                            </ul>
-                        </div>   
-                        <div class="large-6 medium-6 small-6 columns">
-                            <span>Lanbox Store C.A.</span><br>
-                            J-40546566-2<br>
-                            Banesco <br>
-                            Cuenta Corriente<br>
-                            0134 0276 16 2761017369 
-                        </div>
-                        <div class="large-6 medium-6 small-6 columns">
-                            <span>Kristell Graff</span><br>
-                            V-17.985.118<br>
-                            Mercantil<br>
-                            Cuenta Corriente<br>
-                            0105 0118 13 1118763831
-                        </div>
-                        <div class="large-6 medium-6 small-6 columns">
-                            <br><span>Daniel Moreno</span><br>
-                            V-17.016.512<br>
-                            Banco de Venezuela<br>
-                            Cuenta Corriente<br>
-                            0102 0117 90 0000243320
-                        </div>
-                        <div class="large-5 medium-4 small-5 columns">
-                            <br><span>Daniel Moreno</span><br>
-                            V-17.016.512<br>
-                            Banco Activo<br>
-                            Cuenta Corriente<br>
-                            0107 0014 90 6000991087
-                        </div>        
-
+                        <p>Formas de pago</p>
+                        <ul>
+                            <li>Deposito</li>
+                            <li>Cheque</li>
+                            <li>Transferencia</li>
+                        </ul>
+                    </div>
+                    <div class="large-12 medium-12 small-6 large-centered columns">
+                        <span>Lanbox Store C.A.</span><br>
+                        J-40546566-2<br>
+                        Banesco <br>
+                        Cuenta Corriente<br>
+                        0134 0276 16 2761017369 
+                    </div>
+                    <div class="large-12 medium-12 large-centered hide-for-small-only columns">
+                        <br><span>Kristell Graff</span><br>
+                        V-17.985.118<br>
+                        Mercantil<br>
+                        Cuenta Corriente<br>
+                        0105 0118 13 1118763831
+                    </div>
+                    <div class="large-12 medium-4 small-12 large-centered columns">
+                        <br><span>Daniel Moreno</span><br>
+                        V-17.016.512<br>
+                        Banco de Venezuela<br>
+                        Cuenta Corriente<br>
+                        0102 0117 90 0000243320
+                    </div>
                 </div>
+                </div>-->
                 <div id="fade" class="black_overlay"></div>
             </div>
+        </div>
+        <div class="payment-section no-select" id='payment-method'>
+            <div class="row payment-content">
+                <div class="large-12 medium-12 small-12 columns">
+                    <h1 class="shape">Metodos de pagos</h1>
+                </div>
+                <div class="large-4 medium-12 small-12 columns">
+                    <i class="fa fa-money shape"></i>
+                    <h1 class="shape"><span>Efectivo</span></h1>
+                </div>
+                <div class="large-4 medium-12 small-12 columns">
+                    <i class="fa fa-usd shape"></i>
+                    <h1 class="shape"><span>Transferencia</span></h1>
+                </div>
+                <div class="large-4 medium-12 small-12 columns">
+                    <i class="fa fa-bank shape"></i>
+                    <h1 class="shape"><span>Deposito</span></h1>
+                </div>
+             </div>
         </div>

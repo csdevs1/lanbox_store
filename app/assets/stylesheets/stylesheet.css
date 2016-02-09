@@ -109,8 +109,9 @@ html,body {
 }
 
 .content {
-  height:100%;
-  min-height:100%;/*for mozilla*/
+    height:100%;
+    min-height:100%;/*for mozilla*/
+    box-shadow: 0 0 5px 10px #000;
 }
 
 html>body .content {
@@ -331,6 +332,15 @@ html>body .content {
     background-size: cover;
 }
 
+#contact-title {
+    text-shadow: 10px 5px 6px #101010;
+    padding-top: 1%;
+    color: #fff;
+    font-family: 'Dosis', sans-serif;
+    text-align: center;
+    font-size: 12vh;
+}
+
 #nav-contact .fa-envelope-o, #nav-contact .fa-money, #nav-contact .fa-map {
     font-size: 8.5vw;
 }
@@ -340,7 +350,7 @@ html>body .content {
     text-align: center;
     float: right;
     width: 100%;
-    margin-top: 20vh;
+    margin-top: 10vh;
     margin-bottom: 4vh;
 }
 
@@ -348,6 +358,10 @@ html>body .content {
     clear: both;
     height: 0.14vw;
     background: linear-gradient(90deg,rgba(255,255,255,0) 0,rgba(255,255,255,0.2) 50%,rgba(255,255,255,0) 100%);
+}
+
+#nav-contact ul {
+    text-align: center;
 }
 
 #nav-contact ul li {
@@ -400,7 +414,7 @@ html>body .content {
     text-align: center;
 }
 
-.black_overlay{
+.black_overlay {
 	display: none;
 	position:fixed;
 	top: 0%;
@@ -449,10 +463,10 @@ html>body .content {
     overflow: hidden;
     position: fixed;
     background-color: white;
-    width: 99%;
+    width: 49%;
 	min-height: 60%;
     top: 1%;
-    left:  calc(0.2vw + 0.2vh + 0.2vmin);
+    left: 25%;
     text-align: center;
     z-index: 1500;
     padding-bottom: 1%;
@@ -461,17 +475,16 @@ html>body .content {
     text-align: center;
 }
 
-@media only screen and (min-width: 90.063em) {
-    .payment{
-        left: 15%;
-    }
+.container{
+    overflow: hidden;
+    text-align: center;
 }
 
 .payment .columns {
     text-decoration: none;
     color: #000;
     font-family: 'Dosis', sans-serif;
-    font-size: calc(0.8vw + 0.8vh + 0.6vmin);
+    /*font-size: calc(0.8vw + 0.8vh + 0.6vmin);*/
     transition: all 0s;
 }
 
@@ -509,6 +522,26 @@ html>body .content {
 .payment a:hover {
     color: #d31f45;
     text-shadow: -1px 1px 1px #000;
+}
+
+@media only screen and (max-width: 90.063em) {
+    .payment{
+      /*  left: calc(12vw + 15vh + 8vmin);*/
+        left: calc(1.5vw + 2vh + 5vmin);
+        width: 90%;
+    }
+    
+    .payment .columns {
+        text-decoration: none;
+        color: #000;
+        font-family: 'Dosis', sans-serif;
+        font-size: 0.6em;
+    }
+    
+    .payment .columns p {
+        font-weight: 900;
+        font-size: 1em;
+    }
 }
 
 .embed-container {
@@ -549,10 +582,75 @@ html>body .content {
 
 /* END OF CONTACT US */
 
-/* CONTACT FORM */
+/* CONTACT FORM 
 
+.background-contact {
+    overflow: hidden;
+    background: url(../img/contact-us.jpg);
+    background-attachment: fixed;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100%;
+}
 
-/* END OF CONTACT FORM */
+.background-contact a {
+    text-decoration: none;
+    font-size: 1.5em;
+    color: #FFF;
+    padding: 15px;
+}
+
+.background-contact a:hover {
+    text-decoration: none;
+    color: #d9d8d9;
+    text-shadow: 5px 5px 10px #555;
+}
+
+.contact-section {
+    padding-left: 10%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: rgba(0, 0, 0, 0.6);
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.contact-form label {
+    padding-top: 5%;
+    display: block;
+    font-family: 'Dosis', sans-serif;
+    font-size: 1.1em;
+    color: #fff;
+    font-weight: 900;
+}
+
+.contact-form  input[type='text'], .contact-form  input[type='email'] {
+    background-color: transparent;
+    background-image: none;
+    outline: 0;
+    border: 0 solid #999;
+    border-bottom-width: 3px;
+    border-radius: 0;
+    cursor: pointer;
+    line-height: normal;
+    letter-spacing: .05em;
+    color: #555;
+    font-family: font-family: 'Dosis', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    border-color: inherit;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    width: 80%;
+}
+
+.contact-form textarea {
+    min-height: 250px;
+    resize: none;
+    width: 80%;
+}
+
+END OF CONTACT FORM */
 
 #five {
   background-color: #000;
@@ -582,6 +680,100 @@ html>body .content {
     white-space: nowrap;
     animation: bounce 1.2s infinite ease-in;
 }
+/* PAYMENT METHOD */
+
+#payment-method {
+    box-shadow: 0 0 1px 5px rgb(25, 25, 25);
+    text-align: center;
+  /*  background: url(../img/330481.jpg);    */
+    background-attachment: fixed;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgb(52, 52, 70);
+}
+
+.payment-section {
+    background-color: #000;
+}
+
+.no-select {
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none;   /* Chrome/Safari/Opera */
+    -khtml-user-select: none;    /* Konqueror */
+    -moz-user-select: none;      /* Firefox */
+    -ms-user-select: none;       /* IE/Edge */
+    user-select: none;
+    cursor: default;
+}
+
+#payment-method i {
+    color: #fff;
+    font-size: 5.4em;
+}
+
+#payment-method h1 {
+    margin-top: 4px;
+    padding-bottom: 50px;
+    font-family: 'Dosis', sans-serif;
+    text-transform: uppercase;
+    font-size: 3.5em;
+    text-decoration: none;
+    color: #fff;
+    transition: all 0.01s;
+}
+
+.payment-content {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+/* you do realize this makes no sense, right?
+don't use this.
+http://www.youtube.com/watch?v=umDr0mPuyQc */
+.shape {
+  text-shadow: rgb(11, 11, 15) 1px 1px,
+    rgb(11, 11, 15) 2px 2px,
+    rgb(11, 11, 15) 3px 3px,
+    rgb(11, 11, 15) 4px 4px,
+    rgb(11, 11, 15) 5px 5px,
+    rgb(11, 11, 15) 6px 6px,
+    rgb(11, 11, 15) 7px 7px,
+    rgb(11, 11, 15) 8px 8px,
+    rgb(11, 11, 15) 9px 9px,
+    rgb(11, 11, 15) 10px 10px,
+    rgb(11, 11, 15) 11px 11px,
+    rgb(11, 11, 15) 12px 12px,
+    rgb(11, 11, 15) 13px 13px,
+    rgb(12, 12, 17) 14px 14px,
+    rgb(14, 14, 20) 15px 15px,
+    rgb(16, 16, 22) 16px 16px,
+    rgb(18, 18, 25) 17px 17px,
+    rgb(20, 20, 28) 18px 18px,
+    rgb(22, 22, 30) 19px 19px,
+    rgb(24, 24, 33) 20px 20px,
+    rgb(26, 26, 35) 21px 21px,
+    rgb(28, 28, 38) 22px 22px,
+    rgb(30, 30, 41) 23px 23px,
+    rgb(32, 32, 43) 24px 24px,
+    rgb(34, 34, 46) 25px 25px,
+    rgb(36, 36, 49) 26px 26px,
+    rgb(38, 38, 51) 27px 27px,
+    rgb(40, 40, 54) 28px 28px,
+    rgb(42, 42, 56) 29px 29px,
+    rgb(44, 44, 59) 30px 30px,
+    rgb(46, 46, 62) 31px 31px,
+    rgb(48, 48, 64) 32px 32px,
+    rgb(50, 50, 67) 33px 33px,
+    rgb(52, 52, 70) 34px 34px;
+   background-color: rgb(52, 52, 70);
+  height: 100%;
+  width: 100%;
+  font-size: 75px;
+  text-align: center;
+}
+LONG SHADOWS GENERATOR BY JUANI
+/* END OF PAYMENT METHODS*/
 
 @keyframes bounce {
     0% {
