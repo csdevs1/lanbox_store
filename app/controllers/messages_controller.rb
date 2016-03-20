@@ -10,7 +10,7 @@ class MessagesController < ApplicationController
             MessageMailer.message_me(@message).deliver_now
             redirect_to :root, notice: "Thank you for your message."
         else
-            redirect_to new_message_path
+            redirect_to escribenos_path
         end
     end
     

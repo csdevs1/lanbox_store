@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   root 'lanbox_page#home'
-
+    get '/escribenos' => 'messages#new', as: :escribenos
     resources :messages, only: [:new, :create], :path => "escribenos"
 
   # The priority is based upon order of creation: first created -> highest priority.
