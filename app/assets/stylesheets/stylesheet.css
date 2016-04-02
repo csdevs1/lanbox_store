@@ -150,7 +150,7 @@ html>body .content {
 #nav ul li a {
     font-family: 'Dosis', sans-serif;
     text-transform: uppercase;
-    font-size: calc(1.2vw + 1.2vh + 0.6vmin);
+    font-size: 16px;
     text-decoration: none;
     color: #e8e8e8;
 }
@@ -251,6 +251,10 @@ html>body .content {
 /* Large Screens */
 
 @media only screen and (min-width: 64.063em) {
+    #nav ul li a {
+        font-size: 2em;
+    }
+    
     .fullWidth {
         min-width: 100%;
         background: url('service.jpg');
@@ -380,6 +384,10 @@ html>body .content {
 /* Medium Screens */
 
 @media screen and (min-width: 40em) and (max-width: 64.0629em) {
+    #nav ul li a {
+        font-size: 1.8em;
+    }
+    
     .fullWidth {
         min-width: 100%;
         min-height: 100%;
@@ -543,9 +551,13 @@ html>body .content {
 
 /* Small Screens */
 @media screen and (max-width: 39.9375em) {
+    #nav ul li a {
+        font-size: 1.4em;
+    }
+    
     .fullWidth {
         min-width: 100%;
-        background: url('../img/service.jpg');
+        background: url('service.jpg');
         background-repeat: no-repeat;
         background-size: cover;
         background-attachment: fixed;
@@ -560,16 +572,16 @@ html>body .content {
     }
     
     .fullWidth .first:hover, .fullWidth .second:hover, .fullWidth .third:hover {
-        box-shadow: 0px 0px 20px rgba(255,255, 255, 0.5), 0px 0px 15px rgba(255,255, 255, 0.2), 0px 0px 20px rgba(1,255, 255, 0.5);
+        box-shadow: 0px 0px 2px rgba(255,255, 255, 0.5), 0px 0px 1px rgba(255,255, 255, 0.2), 0px 0px 5px rgba(1,255, 255, 0.5);
     }
     
     .first, .second, .third {
         text-align: center;
         margin-top: 1px;
         padding: 15px;
-        border-top: 7px solid rgba(255,255, 255, 0.4);
-        border-bottom: 7px solid rgba(255,255, 255, 0.4);
-        border-radius: 15px;
+        border-top: 0.05vw solid rgba(255,255, 255, 0.4);
+        border-bottom: 0.05vw solid rgba(255,255, 255, 0.4);
+        border-radius: 14px;
         transition: 0.8s;
     }
     
