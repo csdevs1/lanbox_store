@@ -3,7 +3,9 @@ class MessageMailer < ApplicationMailer
     def message_me(msg)
         @msg = msg
         
-        mail from: @msg.email, subject: @msg.subject, body:
-        "De: " + @msg.email + "\n\n" + @msg.content
+        mail from: @msg.email, subject: @msg.subject do |format|
+            format.html { render 'mailer' }
+            format.text { render :text => 'Render text' }
+        end
     end
 end
