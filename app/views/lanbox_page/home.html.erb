@@ -80,7 +80,7 @@
             </div>
         </div>
         <div class="large-12 medium-12 small-12 columns">            
-            <%= form_for @message, :html => {:class => "contact-form"} do |f| %>
+            <%= form_for root_path, :html => {:name => '/',:class => "contact-form"} do |f| %>
                     <% if @message.errors.any? %>
                         <div id="error_explanation">
                             <h2>

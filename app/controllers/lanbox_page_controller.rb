@@ -14,12 +14,12 @@ class LanboxPageController < ApplicationController
             MessageMailer.message_me(@message).deliver_now
             redirect_to :root, notice: "Thank you for your message."
         else
-            redirect_to escribenos_path
+            redirect_to :root, notice: "Couldn't deliver your message"
         end
     end
     
     private
         def message_params
-            params.require(:message).permit(:name, :email, :subject, :content)
+            params.require(:/).permit(:name, :email, :subject, :content)
         end
 end

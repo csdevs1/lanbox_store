@@ -468,7 +468,7 @@ form label, form {
         cursor: pointer;
         line-height: normal;
         letter-spacing: .05em;
-        color: #555;
+        color: #ccc;
         font-family: 'Raleway', sans-serif;
         -webkit-font-smoothing: antialiased;
         border-color: inherit;
